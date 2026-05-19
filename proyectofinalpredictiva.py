@@ -23,6 +23,7 @@ import numpy as np
 datos_arff, meta = arff.loadarff('/content/ProyectoFinalMineriaEIA2024.arff')
 data = pd.DataFrame(datos_arff)
 
+
 # 2. Decodificar las variables categóricas
 # Las variables tipo 'object' suelen ser las categóricas que necesitan decodificación
 for columna in data.select_dtypes([object]).columns:
